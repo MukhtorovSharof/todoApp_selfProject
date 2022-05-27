@@ -156,6 +156,7 @@ window.addEventListener("DOMContentLoaded", () => {
           JSON.stringify(doneTasksStorage)
         );
         getDoneTasks();
+        updateProgressHandler();
       });
 
       let doTaskBtnReturn = document.createElement("button");
