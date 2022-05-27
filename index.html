@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>Todo App Self Project</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-4 offset-4 my-3">
+        <h1 class="text-center btn-warning text-white">ToDo App</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 mx-auto mb-3">
+        <div class="input-group mb-3">
+          <input
+          id="addTaskInput"
+          type="text"
+          class="form-control addTaskInput"
+          placeholder="add task"
+          aria-label="add-task"
+          aria-describedby="addTaskBtn"
+          />
+          <div class="input-group-append">
+            <button
+            id="addTaskBtn"
+            class="btn btn-secondary addTaskBtn"
+            type="button"
+            >
+            Add Task
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8 offset-2 mb-5">
+      <div class="progress">
+        <!-- Progress -->
+      </div>
+    </div>
+  </div>
+  <div class="row d-flex justify-content-between">
+    <div class="col-5 border border-danger p-3">
+      <div class="col-12 mb-4">
+        <h3 class="text-center bg-danger p-1 text-white">Tasks</h3>
+      </div>
+      <div id="not_done_tasks">
+        <!-- Not Done Tasks -->
+      </div>
+    </div>
+    <div class="col-5 border border-success p-3">
+      <div class="col-12 mb-4">
+        <h3 class="text-center bg-success p-1 text-white">Done!</h3>
+      </div>
+      <div id="done_tasks">
+        <!-- Done Tasks -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
