@@ -4,19 +4,19 @@ window.addEventListener("DOMContentLoaded", () => {
   let tasks = [];
   let doneTasksStorage = [];
 
-  // if (JSON.parse(localStorage.getItem("tasks"))) {
-  tasks = JSON.parse(localStorage.getItem("tasks"));
-  // } else {
-  //   localStorage.setItem("tasks", JSON.stringify(tasks));
-  //   tasks = JSON.parse(localStorage.getItem("tasks"));
-  // }
+  if (JSON.parse(localStorage.getItem("tasks"))) {
+    tasks = JSON.parse(localStorage.getItem("tasks"));
+  } else {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+    tasks = JSON.parse(localStorage.getItem("tasks"));
+  }
 
-  // if (JSON.parse(localStorage.getItem("doneTasksStorage"))) {
-  doneTasksStorage = JSON.parse(localStorage.getItem("doneTasksStorage"));
-  // } else {
-  //   localStorage.setItem("doneTasksStorage", JSON.stringify(doneTasksStorage));
-  //   doneTasksStorage = JSON.parse(localStorage.getItem("doneTasksStorage"));
-  // }
+  if (JSON.parse(localStorage.getItem("doneTasksStorage"))) {
+    doneTasksStorage = JSON.parse(localStorage.getItem("doneTasksStorage"));
+  } else {
+    localStorage.setItem("doneTasksStorage", JSON.stringify(doneTasksStorage));
+    doneTasksStorage = JSON.parse(localStorage.getItem("doneTasksStorage"));
+  }
 
   let selected = 0;
 
